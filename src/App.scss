@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Roboto-Black;
+  src: url(Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(Roboto-Light.ttf);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 42px 0px 42px;
+  height: calc(100vh - 20px);
+}
+
+.loader {
+  
+  position: absolute;
+  padding-top: 54px;
+  padding-left: 420px;
+}
+
+.App-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding-bottom: 34px;
+
+  .left {
+    color: #D42026;
+    opacity: 100%;
+    font-size: 27px;
+    
+    span:first-child {
+      font-family: 'Roboto-Black'
+    }
+    span:nth-child(2) {
+      font-family: 'Roboto-Regular';
+    }
+  }
+
+  .right {
+    justify-self: flex-end;
+    color: #D42026;
+    opacity: 100%;
+    font-size: 27px;
+    font-family: 'Roboto-Regular';
+  }
+
+  .line {
+    position: absolute;
+    width: 54px;
+    height: 38px;
+    border-bottom: 4px solid #D42026;
+  }
+}
+
+.App-footer {
+  border-bottom: 12px #D42026;
+}
+
